@@ -279,6 +279,20 @@
   .footer-links a:hover { color: var(--gold); }
   .footer-copy { font-size: 10px; color: var(--gold-muted); letter-spacing: .1em; }
 
+  /* PDF DOWNLOAD BUTTON */
+  .pdf-btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-size: 10px; letter-spacing: .25em; text-transform: uppercase;
+    color: var(--black); background: var(--gold);
+    padding: 14px 28px; text-decoration: none;
+    transition: background .3s, transform .3s;
+    margin-top: 24px;
+  }
+  .pdf-btn:hover { background: var(--gold-light); transform: translateY(-2px); }
+  .pdf-btn svg { flex-shrink: 0; }
+  .hero-actions { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; margin-top: 32px; }
+  .hero-actions .back-link { margin-top: 0 !important; }
+
   /* ANIMATIONS */
   @keyframes fadeInUp   { from{opacity:0;transform:translateY(30px)} to{opacity:1;transform:translateY(0)} }
   @keyframes fadeInRight{ from{opacity:0;transform:translateY(-50%) translateX(40px)} to{opacity:.4;transform:translateY(-50%) translateX(0)} }
@@ -351,10 +365,18 @@
     <div class="page-tag">Tottori Gavà · Gavà, Barcelona</div>
     <h1>Nuestra<br><em>carta</em></h1>
     <p>Cocina japonesa auténtica elaborada con ingredientes frescos y técnicas tradicionales.<br>Cada plato, una experiencia.</p>
-    <a href="https://altorrecillas.github.io/tottori/" class="back-link" style="margin-top:32px;display:inline-flex;">
-      <svg width="20" height="10" viewBox="0 0 20 10" fill="none"><path d="M20 5H2M6 1L2 5L6 9" stroke="currentColor" stroke-width="1"/></svg>
-      Volver al inicio
-    </a>
+    <div class="hero-actions">
+      <a href="https://altorrecillas.github.io/tottori/" class="back-link">
+        <svg width="20" height="10" viewBox="0 0 20 10" fill="none"><path d="M20 5H2M6 1L2 5L6 9" stroke="currentColor" stroke-width="1"/></svg>
+        Volver al inicio
+      </a>
+      <a href="https://www.tottorigava.com/_files/ugd/0b96d8_a8f9070652094b02bd70a9c6be7a6674.pdf" class="pdf-btn" download target="_blank" rel="noopener">
+        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7 1v9M7 10l-3-3M7 10l3-3M1 13h12" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+        </svg>
+        Descargar carta PDF
+      </a>
+    </div>
   </div>
 </div>
 
