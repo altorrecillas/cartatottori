@@ -154,10 +154,17 @@
   /* SECTION LABEL */
   .section-label {
     font-size: 9.5px; letter-spacing: .4em; text-transform: uppercase;
-    color: var(--gold); margin-bottom: 24px;
+    color: var(--gold); margin-bottom: 16px;
     display: flex; align-items: center; gap: 16px;
   }
   .section-label::before { content: ''; width: 24px; height: 1px; background: var(--gold); }
+  .category-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(60px, 9vw, 120px);
+    font-weight: 300; color: var(--white); line-height: .9;
+    letter-spacing: -.02em; margin-bottom: 0;
+  }
+  .category-title em { font-style: italic; color: var(--gold-light); }
 
   /* CATEGORY SECTION */
   .carta-section { padding: 100px 60px; position: relative; }
@@ -307,13 +314,13 @@
 <body>
 
 <nav id="navbar">
-  <a href="tottoriprueba.html" class="nav-logo"><span>TOTTORI</span>Restaurant Japonès</a>
+  <a href="https://altorrecillas.github.io/tottori/" class="nav-logo"><span>TOTTORI</span>Restaurant Japonès</a>
   <ul class="nav-links">
-    <li><a href="tottoriprueba.html#about">El Restaurante</a></li>
+    <li><a href="https://altorrecillas.github.io/tottori/#about">El Restaurante</a></li>
     <li><a href="carta.html" class="active">Carta</a></li>
-    <li><a href="tottoriprueba.html#daily">Menú del Día</a></li>
-    <li><a href="tottoriprueba.html#galeria">Galería</a></li>
-    <li><a href="tottoriprueba.html#location">Ubicación</a></li>
+    <li><a href="https://altorrecillas.github.io/tottori/#daily">Menú del Día</a></li>
+    <li><a href="https://altorrecillas.github.io/tottori/#galeria">Galería</a></li>
+    <li><a href="https://altorrecillas.github.io/tottori/#location">Ubicación</a></li>
   </ul>
   <a href="tel:936388770" class="nav-cta">Reservar mesa</a>
   <button class="hamburger" id="hamburger" aria-label="Abrir menú">
@@ -322,11 +329,11 @@
 </nav>
 
 <div class="mobile-menu" id="mobileMenu">
-  <a href="tottoriprueba.html#about"   onclick="closeMobile()">El Restaurante</a>
+  <a href="https://altorrecillas.github.io/tottori/#about"   onclick="closeMobile()">El Restaurante</a>
   <a href="carta.html"                 onclick="closeMobile()">Carta</a>
-  <a href="tottoriprueba.html#daily"   onclick="closeMobile()">Menú del Día</a>
-  <a href="tottoriprueba.html#galeria" onclick="closeMobile()">Galería</a>
-  <a href="tottoriprueba.html#location"onclick="closeMobile()">Ubicación</a>
+  <a href="https://altorrecillas.github.io/tottori/#daily"   onclick="closeMobile()">Menú del Día</a>
+  <a href="https://altorrecillas.github.io/tottori/#galeria" onclick="closeMobile()">Galería</a>
+  <a href="https://altorrecillas.github.io/tottori/#location"onclick="closeMobile()">Ubicación</a>
   <a href="tel:936388770" class="mobile-cta">Reservar mesa</a>
 </div>
 
@@ -337,7 +344,7 @@
     <div class="page-tag">Tottori Gavà · Gavà, Barcelona</div>
     <h1>Nuestra<br><em>carta</em></h1>
     <p>Cocina japonesa auténtica elaborada con ingredientes frescos y técnicas tradicionales.<br>Cada plato, una experiencia.</p>
-    <a href="tottoriprueba.html" class="back-link" style="margin-top:32px;display:inline-flex;">
+    <a href="https://altorrecillas.github.io/tottori/" class="back-link" style="margin-top:32px;display:inline-flex;">
       <svg width="20" height="10" viewBox="0 0 20 10" fill="none"><path d="M20 5H2M6 1L2 5L6 9" stroke="currentColor" stroke-width="1"/></svg>
       Volver al inicio
     </a>
@@ -348,8 +355,8 @@
 <section class="carta-section">
   <div class="section-header reveal">
     <div>
-      <div class="section-label">Entrantes</div>
-      <h2>Para <em>empezar</em></h2>
+      <div class="section-label">Nuestra carta</div>
+      <div class="category-title"><em>Entrantes</em></div>
     </div>
     <div class="section-count">01</div>
   </div>
@@ -541,14 +548,177 @@
 
 <div class="divider-section"></div>
 
-<footer>
+<!-- MAKIS -->
+<section class="carta-section alt-bg">
+  <div class="section-header reveal">
+    <div>
+      <div class="section-label">Nuestra carta</div>
+      <div class="category-title"><em>Makis</em></div>
+    </div>
+    <div class="section-count">02</div>
+  </div>
+
+  <div class="dish-grid">
+
+    <div class="dish-card reveal">
+      <div class="dish-card-img">
+        <img src="001%20Makis%20de%20salm%C3%B3n%206p.avif" alt="Makis de salmón 6p" loading="lazy">
+      </div>
+      <div class="dish-card-body">
+        <div class="dish-num">001</div>
+        <div class="dish-name">Makis de salmón 6p</div>
+      </div>
+    </div>
+
+    <div class="dish-card reveal">
+      <div class="dish-card-img">
+        <img src="002%20Makis%20de%20at%C3%BAn%206p.avif" alt="Makis de atún 6p" loading="lazy">
+      </div>
+      <div class="dish-card-body">
+        <div class="dish-num">002</div>
+        <div class="dish-name">Makis de atún 6p</div>
+      </div>
+    </div>
+
+    <div class="dish-card reveal">
+      <div class="dish-card-img">
+        <img src="003%20Makis%20de%20anguila%206p.avif" alt="Makis de anguila 6p" loading="lazy">
+      </div>
+      <div class="dish-card-body">
+        <div class="dish-num">003</div>
+        <div class="dish-name">Makis de anguila 6p</div>
+      </div>
+    </div>
+
+    <div class="dish-card reveal">
+      <div class="dish-card-img">
+        <img src="004%20Makis%20de%20langostino%206p.avif" alt="Makis de langostino 6p" loading="lazy">
+      </div>
+      <div class="dish-card-body">
+        <div class="dish-num">004</div>
+        <div class="dish-name">Makis de langostino 6p</div>
+      </div>
+    </div>
+
+    <div class="dish-card reveal">
+      <div class="dish-card-img">
+        <img src="005%20Makis%20de%20aguacate%206p.avif" alt="Makis de aguacate 6p" loading="lazy">
+      </div>
+      <div class="dish-card-body">
+        <div class="dish-num">005</div>
+        <div class="dish-name">Makis de aguacate 6p</div>
+      </div>
+    </div>
+
+    <div class="dish-card reveal">
+      <div class="dish-card-img">
+        <img src="006%20Makis%20de%20cangrejo%206p.avif" alt="Makis de cangrejo 6p" loading="lazy">
+      </div>
+      <div class="dish-card-body">
+        <div class="dish-num">006</div>
+        <div class="dish-name">Makis de cangrejo 6p</div>
+      </div>
+    </div>
+
+    <div class="dish-card reveal">
+      <div class="dish-card-img">
+        <img src="007%20Makis%20de%20tortilla%206p.avif" alt="Makis de tortilla 6p" loading="lazy">
+      </div>
+      <div class="dish-card-body">
+        <div class="dish-num">007</div>
+        <div class="dish-name">Makis de tortilla 6p</div>
+      </div>
+    </div>
+
+    <div class="dish-card reveal">
+      <div class="dish-card-img">
+        <img src="008%20Makis%20de%20pepino%206p.avif" alt="Makis de pepino 6p" loading="lazy">
+      </div>
+      <div class="dish-card-body">
+        <div class="dish-num">008</div>
+        <div class="dish-name">Makis de pepino 6p</div>
+      </div>
+    </div>
+
+    <div class="dish-card reveal">
+      <div class="dish-card-img">
+        <img src="009%20Makis%20variado%206p.avif" alt="Makis variado 6p" loading="lazy">
+      </div>
+      <div class="dish-card-body">
+        <div class="dish-num">009</div>
+        <div class="dish-name">Makis variado 6p</div>
+      </div>
+    </div>
+
+    <div class="dish-card reveal">
+      <div class="dish-card-img">
+        <img src="009%20Makis%20variado%2012p.avif" alt="Makis variado 12p" loading="lazy">
+      </div>
+      <div class="dish-card-body">
+        <div class="dish-num">009</div>
+        <div class="dish-name">Makis variado 12p</div>
+      </div>
+    </div>
+
+    <div class="dish-card reveal">
+      <div class="dish-card-img">
+        <img src="010%20Makis%20pl%C3%A1tano.avif" alt="Makis plátano" loading="lazy">
+      </div>
+      <div class="dish-card-body">
+        <div class="dish-num">010</div>
+        <div class="dish-name">Makis plátano</div>
+      </div>
+    </div>
+
+    <div class="dish-card reveal">
+      <div class="dish-card-img">
+        <img src="011%20Makis%20fresa.avif" alt="Makis fresa" loading="lazy">
+      </div>
+      <div class="dish-card-body">
+        <div class="dish-num">011</div>
+        <div class="dish-name">Makis fresa</div>
+      </div>
+    </div>
+
+    <div class="dish-card reveal">
+      <div class="dish-card-img">
+        <img src="013%20Makis%20foie%20fras.avif" alt="Makis foie fras" loading="lazy">
+      </div>
+      <div class="dish-card-body">
+        <div class="dish-num">013</div>
+        <div class="dish-name">Makis foie fras</div>
+      </div>
+    </div>
+
+    <div class="dish-card reveal">
+      <div class="dish-card-img">
+        <img src="014%20Makis%20de%20pollo.avif" alt="Makis de pollo" loading="lazy">
+      </div>
+      <div class="dish-card-body">
+        <div class="dish-num">014</div>
+        <div class="dish-name">Makis de pollo</div>
+      </div>
+    </div>
+
+    <div class="dish-card reveal">
+      <div class="dish-card-img">
+        <img src="015%20Maki%20de%20Queso%206p.avif" alt="Maki de Queso 6p" loading="lazy">
+      </div>
+      <div class="dish-card-body">
+        <div class="dish-num">015</div>
+        <div class="dish-name">Maki de Queso 6p</div>
+      </div>
+    </div>
+
+  </div>
+</section>
   <div class="footer-logo">TOTTORI <span>Restaurant japonès · Gavà</span></div>
   <ul class="footer-links">
-    <li><a href="tottoriprueba.html#about">El Restaurante</a></li>
+    <li><a href="https://altorrecillas.github.io/tottori/#about">El Restaurante</a></li>
     <li><a href="carta.html">Carta</a></li>
-    <li><a href="tottoriprueba.html#daily">Menú</a></li>
-    <li><a href="tottoriprueba.html#galeria">Galería</a></li>
-    <li><a href="tottoriprueba.html#reservas">Reservas</a></li>
+    <li><a href="https://altorrecillas.github.io/tottori/#daily">Menú</a></li>
+    <li><a href="https://altorrecillas.github.io/tottori/#galeria">Galería</a></li>
+    <li><a href="https://altorrecillas.github.io/tottori/#reservas">Reservas</a></li>
     <li><a href="https://www.tottorigava.com/avisolegal" target="_blank">Aviso Legal</a></li>
   </ul>
   <div class="footer-copy">© 2026 Tottori Gavà · Barcelona</div>
