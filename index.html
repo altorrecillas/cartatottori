@@ -237,11 +237,15 @@
     font-weight: 400; color: var(--white); line-height: 1.2; letter-spacing: .02em;
   }
 
+  .dish-desc {
+    font-family: 'Montserrat', sans-serif; font-size: 10.5px;
+    font-weight: 300; color: var(--cream-dim); letter-spacing: .04em;
+    line-height: 1.5; margin-top: 5px;
+  }
   .dish-price {
     font-family: 'Cormorant Garamond', serif; font-size: 20px;
     font-weight: 400; color: var(--gold); letter-spacing: .06em;
-    margin-top: 8px; line-height: 1;
-    transition: color .35s;
+    margin-top: 8px; line-height: 1; transition: color .35s;
   }
   .dish-card:hover .dish-price { color: var(--gold-light); }
   /* DIVIDER LINE */
@@ -345,7 +349,6 @@
   <a href="https://altorrecillas.github.io/tottori/" class="nav-logo"><span>TOTTORI</span>Restaurant Japonès</a>
   <ul class="nav-links">
     <li><a href="https://altorrecillas.github.io/tottori/#about">El Restaurante</a></li>
-    <li><a href="carta.html" class="active">Carta</a></li>
     <li><a href="https://altorrecillas.github.io/tottori/#daily">Menú del Día</a></li>
     <li><a href="https://altorrecillas.github.io/tottori/#galeria">Galería</a></li>
     <li><a href="https://altorrecillas.github.io/tottori/#location">Ubicación</a></li>
@@ -358,7 +361,6 @@
 
 <div class="mobile-menu" id="mobileMenu">
   <a href="https://altorrecillas.github.io/tottori/#about"   onclick="closeMobile()">El Restaurante</a>
-  <a href="carta.html"                 onclick="closeMobile()">Carta</a>
   <a href="https://altorrecillas.github.io/tottori/#daily"   onclick="closeMobile()">Menú del Día</a>
   <a href="https://altorrecillas.github.io/tottori/#galeria" onclick="closeMobile()">Galería</a>
   <a href="https://altorrecillas.github.io/tottori/#location"onclick="closeMobile()">Ubicación</a>
@@ -434,78 +436,12 @@
 
     <div class="dish-card reveal">
       <div class="dish-card-img">
-        <img src="920%20Ensalada%20de%20salm%C3%B3n.avif" alt="Ensalada de salmón" loading="lazy">
-      </div>
-      <div class="dish-card-body">
-        <div class="dish-num">920</div>
-        <div class="dish-name">Ensalada de salmón</div>
-        <div class="dish-price">8,60 €</div>
-      </div>
-    </div>
-
-    <div class="dish-card reveal">
-      <div class="dish-card-img">
         <img src="904%20Sopa%20de%20miso.avif" alt="Sopa de miso" loading="lazy">
       </div>
       <div class="dish-card-body">
         <div class="dish-num">904</div>
         <div class="dish-name">Sopa de miso</div>
         <div class="dish-price">4,20 €</div>
-      </div>
-    </div>
-
-    <div class="dish-card reveal">
-      <div class="dish-card-img">
-        <img src="907%20Gyoza%20de%20carne.avif" alt="Gyoza de carne" loading="lazy">
-      </div>
-      <div class="dish-card-body">
-        <div class="dish-num">907</div>
-        <div class="dish-name">Gyoza de carne</div>
-        <div class="dish-price">6,90 €</div>
-      </div>
-    </div>
-
-    <div class="dish-card reveal">
-      <div class="dish-card-img">
-        <img src="908%20Rollito%20de%20marisco.avif" alt="Rollito de marisco" loading="lazy">
-      </div>
-      <div class="dish-card-body">
-        <div class="dish-num">908</div>
-        <div class="dish-name">Rollito de marisco</div>
-        <div class="dish-price">5,50 €</div>
-      </div>
-    </div>
-
-    <div class="dish-card reveal">
-      <div class="dish-card-img">
-        <img src="917%20TAKOYAKI.avif" alt="Takoyaki" loading="lazy">
-      </div>
-      <div class="dish-card-body">
-        <div class="dish-num">917</div>
-        <div class="dish-name">Takoyaki</div>
-        <div class="dish-price">6,30 €</div>
-      </div>
-    </div>
-
-    <div class="dish-card reveal">
-      <div class="dish-card-img">
-        <img src="910%20Tempura%20batter%20mix.avif" alt="Tempura batter mix" loading="lazy">
-      </div>
-      <div class="dish-card-body">
-        <div class="dish-num">910</div>
-        <div class="dish-name">Tempura batter mix</div>
-        <div class="dish-price">10,80 €</div>
-      </div>
-    </div>
-
-    <div class="dish-card reveal">
-      <div class="dish-card-img">
-        <img src="909%20Chicken%20teriyaki.avif" alt="Chicken teriyaki" loading="lazy">
-      </div>
-      <div class="dish-card-body">
-        <div class="dish-num">909</div>
-        <div class="dish-name">Chicken teriyaki</div>
-        <div class="dish-price">6,20 €</div>
       </div>
     </div>
 
@@ -555,11 +491,57 @@
 
     <div class="dish-card reveal">
       <div class="dish-card-img">
+        <img src="907%20Gyoza%20de%20carne.avif" alt="Gyoza de carne" loading="lazy">
+      </div>
+      <div class="dish-card-body">
+        <div class="dish-num">907</div>
+        <div class="dish-name">Gyoza de carne</div>
+        <div class="dish-price">6,90 €</div>
+      </div>
+    </div>
+
+    <div class="dish-card reveal">
+      <div class="dish-card-img">
+        <img src="908%20Rollito%20de%20marisco.avif" alt="Rollito de marisco" loading="lazy">
+      </div>
+      <div class="dish-card-body">
+        <div class="dish-num">908</div>
+        <div class="dish-name">Rollito de marisco</div>
+        <div class="dish-price">5,50 €</div>
+      </div>
+    </div>
+
+    <div class="dish-card reveal">
+      <div class="dish-card-img">
+        <img src="909%20Chicken%20teriyaki.avif" alt="Chicken teriyaki" loading="lazy">
+      </div>
+      <div class="dish-card-body">
+        <div class="dish-num">909</div>
+        <div class="dish-name">Chicken teriyaki</div>
+        <div class="dish-price">6,20 €</div>
+      </div>
+    </div>
+
+    <div class="dish-card reveal">
+      <div class="dish-card-img">
+        <img src="910%20Tempura%20batter%20mix.avif" alt="Tempura batter mix" loading="lazy">
+      </div>
+      <div class="dish-card-body">
+        <div class="dish-num">910</div>
+        <div class="dish-name">Tempura batter mix</div>
+        <div class="dish-desc">Selección de tempuras de gambas, zanahoria, calabaza, cebolla, pimiento y berenjena</div>
+        <div class="dish-price">10,80 €</div>
+      </div>
+    </div>
+
+    <div class="dish-card reveal">
+      <div class="dish-card-img">
         <img src="911%20Oyakodon.avif" alt="Oyakodon" loading="lazy">
       </div>
       <div class="dish-card-body">
         <div class="dish-num">911</div>
         <div class="dish-name">Oyakodon</div>
+        <div class="dish-desc">Pollo crujiente con arroz</div>
         <div class="dish-price">10,95 €</div>
       </div>
     </div>
@@ -571,6 +553,7 @@
       <div class="dish-card-body">
         <div class="dish-num">912</div>
         <div class="dish-name">Katsudon</div>
+        <div class="dish-desc">Chuleta crujiente con arroz</div>
         <div class="dish-price">10,95 €</div>
       </div>
     </div>
@@ -594,6 +577,28 @@
         <div class="dish-num">916</div>
         <div class="dish-name">Arroz con huevo</div>
         <div class="dish-price">4,30 €</div>
+      </div>
+    </div>
+
+    <div class="dish-card reveal">
+      <div class="dish-card-img">
+        <img src="917%20TAKOYAKI.avif" alt="Takoyaki" loading="lazy">
+      </div>
+      <div class="dish-card-body">
+        <div class="dish-num">917</div>
+        <div class="dish-name">Takoyaki</div>
+        <div class="dish-price">6,30 €</div>
+      </div>
+    </div>
+
+    <div class="dish-card reveal">
+      <div class="dish-card-img">
+        <img src="920%20Ensalada%20de%20salm%C3%B3n.avif" alt="Ensalada de salmón" loading="lazy">
+      </div>
+      <div class="dish-card-body">
+        <div class="dish-num">920</div>
+        <div class="dish-name">Ensalada de salmón</div>
+        <div class="dish-price">8,60 €</div>
       </div>
     </div>
 
@@ -622,6 +627,7 @@
         <div class="dish-num">001</div>
         <div class="dish-name">Makis de salmón 6p</div>
         <div class="dish-price">5,35 €</div>
+        <div class="dish-desc" style="margin-top:6px;">+ 3 piezas — 2,85 €</div>
       </div>
     </div>
 
@@ -633,6 +639,7 @@
         <div class="dish-num">002</div>
         <div class="dish-name">Makis de atún 6p</div>
         <div class="dish-price">5,65 €</div>
+        <div class="dish-desc" style="margin-top:6px;">+ 3 piezas — 3,55 €</div>
       </div>
     </div>
 
@@ -644,6 +651,7 @@
         <div class="dish-num">003</div>
         <div class="dish-name">Makis de anguila 6p</div>
         <div class="dish-price">6,35 €</div>
+        <div class="dish-desc" style="margin-top:6px;">+ 3 piezas — 4,15 €</div>
       </div>
     </div>
 
@@ -655,6 +663,7 @@
         <div class="dish-num">004</div>
         <div class="dish-name">Makis de langostino 6p</div>
         <div class="dish-price">5,65 €</div>
+        <div class="dish-desc" style="margin-top:6px;">+ 3 piezas — 3,55 €</div>
       </div>
     </div>
 
@@ -666,6 +675,7 @@
         <div class="dish-num">005</div>
         <div class="dish-name">Makis de aguacate 6p</div>
         <div class="dish-price">4,35 €</div>
+        <div class="dish-desc" style="margin-top:6px;">+ 3 piezas — 2,35 €</div>
       </div>
     </div>
 
@@ -677,6 +687,7 @@
         <div class="dish-num">006</div>
         <div class="dish-name">Makis de cangrejo 6p</div>
         <div class="dish-price">4,85 €</div>
+        <div class="dish-desc" style="margin-top:6px;">+ 3 piezas — 2,85 €</div>
       </div>
     </div>
 
@@ -688,6 +699,7 @@
         <div class="dish-num">007</div>
         <div class="dish-name">Makis de tortilla 6p</div>
         <div class="dish-price">4,85 €</div>
+        <div class="dish-desc" style="margin-top:6px;">+ 3 piezas — 2,85 €</div>
       </div>
     </div>
 
@@ -699,6 +711,7 @@
         <div class="dish-num">008</div>
         <div class="dish-name">Makis de pepino 6p</div>
         <div class="dish-price">4,35 €</div>
+        <div class="dish-desc" style="margin-top:6px;">+ 3 piezas — 2,35 €</div>
       </div>
     </div>
 
@@ -709,6 +722,7 @@
       <div class="dish-card-body">
         <div class="dish-num">009</div>
         <div class="dish-name">Makis variado 6p</div>
+        <div class="dish-desc">Salmón, atún y aguacate</div>
         <div class="dish-price">6,35 €</div>
       </div>
     </div>
@@ -720,7 +734,8 @@
       <div class="dish-card-body">
         <div class="dish-num">009</div>
         <div class="dish-name">Makis variado 12p</div>
-        <div class="dish-price">6,35 €</div>
+        <div class="dish-desc">Salmón, atún, langostino, aguacate</div>
+        <div class="dish-price">10,95 €</div>
       </div>
     </div>
 
@@ -775,6 +790,7 @@
         <div class="dish-num">015</div>
         <div class="dish-name">Maki de Queso 6p</div>
         <div class="dish-price">4,60 €</div>
+        <div class="dish-desc" style="margin-top:6px;">+ 3 piezas — 2,60 €</div>
       </div>
     </div>
 
@@ -940,6 +956,7 @@
       <div class="dish-card-body">
         <div class="dish-num">208</div>
         <div class="dish-name">Futomaki de Cangrejo 8p</div>
+        <div class="dish-desc">Ensalada, mayonesa masago, y cangrejo rebozado</div>
         <div class="dish-price">12,95 €</div>
       </div>
     </div>
@@ -1001,6 +1018,7 @@
       <div class="dish-card-body">
         <div class="dish-num">304</div>
         <div class="dish-name">Temaki vegetal</div>
+        <div class="dish-desc">Aguacate, pimiento rojo, pepino, lechuga, tortilla y sésamo</div>
         <div class="dish-price">4,95 €</div>
       </div>
     </div>
@@ -1040,6 +1058,7 @@
       <div class="dish-card-body">
         <div class="dish-num">400</div>
         <div class="dish-name">Verde roll salmón 2p</div>
+        <div class="dish-desc">Aguacate, pimiento rojo, lechuga, tortilla, sésamo y salmón</div>
         <div class="dish-price">8,60 €</div>
       </div>
     </div>
@@ -1051,6 +1070,7 @@
       <div class="dish-card-body">
         <div class="dish-num">401</div>
         <div class="dish-name">Verde roll vegetal 2p</div>
+        <div class="dish-desc">Aguacate, pimiento rojo, pepino, lechuga, tortilla y sésamo</div>
         <div class="dish-price">7,30 €</div>
       </div>
     </div>
@@ -1062,6 +1082,7 @@
       <div class="dish-card-body">
         <div class="dish-num">402</div>
         <div class="dish-name">Crunch cali roll 8p</div>
+        <div class="dish-desc">Cangrejo, pepino, aguacate, cebolla frita y salsa picante</div>
         <div class="dish-price">7,95 €</div>
       </div>
     </div>
@@ -1073,6 +1094,7 @@
       <div class="dish-card-body">
         <div class="dish-num">403</div>
         <div class="dish-name">Rainbow roll 8p</div>
+        <div class="dish-desc">Salmón, atún, langostino, dorada, aguacate, cangrejo y pepino</div>
         <div class="dish-price">9,65 €</div>
       </div>
     </div>
@@ -1084,6 +1106,7 @@
       <div class="dish-card-body">
         <div class="dish-num">404</div>
         <div class="dish-name">Dragon roll salmón 8p</div>
+        <div class="dish-desc">Salmón, aguacate, cangrejo y pepino</div>
         <div class="dish-price">9,35 €</div>
       </div>
     </div>
@@ -1095,6 +1118,7 @@
       <div class="dish-card-body">
         <div class="dish-num">405</div>
         <div class="dish-name">Dragon roll atún 8p</div>
+        <div class="dish-desc">Atún, aguacate, cangrejo y pepino</div>
         <div class="dish-price">9,65 €</div>
       </div>
     </div>
@@ -1106,6 +1130,7 @@
       <div class="dish-card-body">
         <div class="dish-num">406</div>
         <div class="dish-name">Tottori roll 8p</div>
+        <div class="dish-desc">Atún, cangrejo, aguacate, pepino y salsa picante</div>
         <div class="dish-price">11,30 €</div>
       </div>
     </div>
@@ -1117,6 +1142,7 @@
       <div class="dish-card-body">
         <div class="dish-num">407</div>
         <div class="dish-name">Salmón ikura roll 8p</div>
+        <div class="dish-desc">Salmón, huevos de salmón, queso, cangrejo y aguacate</div>
         <div class="dish-price">11,60 €</div>
       </div>
     </div>
@@ -1128,6 +1154,7 @@
       <div class="dish-card-body">
         <div class="dish-num">408</div>
         <div class="dish-name">California de cangrejo 8p</div>
+        <div class="dish-desc">Cangrejo, aguacate y sésamo</div>
         <div class="dish-price">8,30 €</div>
       </div>
     </div>
@@ -1139,6 +1166,7 @@
       <div class="dish-card-body">
         <div class="dish-num">409</div>
         <div class="dish-name">California masago 8p</div>
+        <div class="dish-desc">Cangrejo, aguacate y masago</div>
         <div class="dish-price">8,30 €</div>
       </div>
     </div>
@@ -1150,6 +1178,7 @@
       <div class="dish-card-body">
         <div class="dish-num">410</div>
         <div class="dish-name">California de salmón 8p</div>
+        <div class="dish-desc">Salmón, aguacate y sésamo</div>
         <div class="dish-price">8,35 €</div>
       </div>
     </div>
@@ -1161,6 +1190,7 @@
       <div class="dish-card-body">
         <div class="dish-num">411</div>
         <div class="dish-name">California de atún 8p</div>
+        <div class="dish-desc">Atún, aguacate y sésamo</div>
         <div class="dish-price">8,65 €</div>
       </div>
     </div>
@@ -1172,6 +1202,7 @@
       <div class="dish-card-body">
         <div class="dish-num">412</div>
         <div class="dish-name">Spicy roll salmón 9p</div>
+        <div class="dish-desc">Salmón, aguacate, pepino y salsa picante</div>
         <div class="dish-price">8,50 €</div>
       </div>
     </div>
@@ -1183,6 +1214,7 @@
       <div class="dish-card-body">
         <div class="dish-num">413</div>
         <div class="dish-name">Spicy roll atún 9p</div>
+        <div class="dish-desc">Atún, aguacate, pepino y salsa picante</div>
         <div class="dish-price">8,80 €</div>
       </div>
     </div>
@@ -1194,6 +1226,7 @@
       <div class="dish-card-body">
         <div class="dish-num">414</div>
         <div class="dish-name">Spicy roll cangrejo 9p</div>
+        <div class="dish-desc">Cangrejo, aguacate, pepino y salsa picante</div>
         <div class="dish-price">8,30 €</div>
       </div>
     </div>
@@ -1205,6 +1238,7 @@
       <div class="dish-card-body">
         <div class="dish-num">415</div>
         <div class="dish-name">Crunch cali roll con salmón 8p</div>
+        <div class="dish-desc">Salmón, pepino, aguacate, cebolla frita y salsa picante</div>
         <div class="dish-price">8,65 €</div>
       </div>
     </div>
@@ -1365,6 +1399,7 @@
       <div class="dish-card-body">
         <div class="dish-num">507</div>
         <div class="dish-name">Tulipa de ikura</div>
+        <div class="dish-desc">Salmón, huevos de salmón</div>
         <div class="dish-price">4,85 €</div>
       </div>
     </div>
@@ -1525,6 +1560,7 @@
       <div class="dish-card-body">
         <div class="dish-num">610</div>
         <div class="dish-name">Nigiri de salmón flambeado 6p</div>
+        <div class="dish-desc">Salmón y salsa mayonesa</div>
         <div class="dish-price">9,50 €</div>
       </div>
     </div>
@@ -1553,6 +1589,7 @@
       <div class="dish-card-body">
         <div class="dish-num">700</div>
         <div class="dish-name">Paste de Tottori</div>
+        <div class="dish-desc">Atún, salmón, aguacate, menta y almendras</div>
         <div class="dish-price">12,30 €</div>
       </div>
     </div>
@@ -1575,6 +1612,7 @@
       <div class="dish-card-body">
         <div class="dish-num">702</div>
         <div class="dish-name">Chirashi variado</div>
+        <div class="dish-desc">Atún, salmón y anguila</div>
         <div class="dish-price">13,60 €</div>
       </div>
     </div>
@@ -1626,6 +1664,7 @@
         <div class="dish-num">705</div>
         <div class="dish-name">Sashimi de salmón 9p</div>
         <div class="dish-price">13,60 €</div>
+        <div class="dish-desc" style="margin-top:6px;">+ 6 piezas — 9,60 €</div>
       </div>
     </div>
 
@@ -1637,6 +1676,7 @@
         <div class="dish-num">706</div>
         <div class="dish-name">Sashimi de atún 9p</div>
         <div class="dish-price">14,50 €</div>
+        <div class="dish-desc" style="margin-top:6px;">+ 6 piezas — 10,30 €</div>
       </div>
     </div>
 
@@ -1648,6 +1688,7 @@
         <div class="dish-num">707</div>
         <div class="dish-name">Sashimi variado 9p</div>
         <div class="dish-price">17,50 €</div>
+        <div class="dish-desc" style="margin-top:6px;">+ 6 piezas — 12,50 €</div>
       </div>
     </div>
 
@@ -1697,29 +1738,8 @@
       <div class="dish-card-body">
         <div class="dish-num">800</div>
         <div class="dish-name">Maki combinado</div>
+        <div class="dish-desc">6p salmón, 6p atún, 6p aguacate, 6p cangrejo</div>
         <div class="dish-price">15,30 €</div>
-      </div>
-    </div>
-
-    <div class="dish-card reveal">
-      <div class="dish-card-img">
-        <img src="805%20Maxi%20maki%201.avif" alt="Maxi maki 1" loading="lazy">
-      </div>
-      <div class="dish-card-body">
-        <div class="dish-num">805</div>
-        <div class="dish-name">Maxi maki 1</div>
-        <div class="dish-price">15,90 €</div>
-      </div>
-    </div>
-
-    <div class="dish-card reveal">
-      <div class="dish-card-img">
-        <img src="806%20Maxi%20maki%202.avif" alt="Maxi maki 2" loading="lazy">
-      </div>
-      <div class="dish-card-body">
-        <div class="dish-num">806</div>
-        <div class="dish-name">Maxi maki 2</div>
-        <div class="dish-price">15,60 €</div>
       </div>
     </div>
 
@@ -1730,6 +1750,7 @@
       <div class="dish-card-body">
         <div class="dish-num">801</div>
         <div class="dish-name">Menú one</div>
+        <div class="dish-desc">3p nigiri salmón, 3p nigiri atún, 3p maki salmón, 3p maki atún</div>
         <div class="dish-price">11,90 €</div>
       </div>
     </div>
@@ -1741,6 +1762,7 @@
       <div class="dish-card-body">
         <div class="dish-num">802</div>
         <div class="dish-name">Menú two</div>
+        <div class="dish-desc">6p nigiri salmón, 6p california salmón</div>
         <div class="dish-price">13,30 €</div>
       </div>
     </div>
@@ -1752,6 +1774,7 @@
       <div class="dish-card-body">
         <div class="dish-num">803</div>
         <div class="dish-name">Menú three</div>
+        <div class="dish-desc">4p nigiri salmón, 4p nigiri atún, 2p maki atún, 2p maki salmón, 2p california salmón</div>
         <div class="dish-price">15,30 €</div>
       </div>
     </div>
@@ -1763,7 +1786,32 @@
       <div class="dish-card-body">
         <div class="dish-num">804</div>
         <div class="dish-name">Menú four</div>
+        <div class="dish-desc">1p nigiri salmón, 1p nigiri atún, 1p nigiri, 1p nigiri langostino, 1p nigiri dorada, 4p maki atún, 4p maki salmón y 6p spicy roll cangrejo</div>
         <div class="dish-price">16,90 €</div>
+      </div>
+    </div>
+
+    <div class="dish-card reveal">
+      <div class="dish-card-img">
+        <img src="805%20Maxi%20maki%201.avif" alt="Maxi maki 1" loading="lazy">
+      </div>
+      <div class="dish-card-body">
+        <div class="dish-num">805</div>
+        <div class="dish-name">Maxi maki 1</div>
+        <div class="dish-desc">6p maki salmón, 6p maki atún y 6p spicy atún</div>
+        <div class="dish-price">15,90 €</div>
+      </div>
+    </div>
+
+    <div class="dish-card reveal">
+      <div class="dish-card-img">
+        <img src="806%20Maxi%20maki%202.avif" alt="Maxi maki 2" loading="lazy">
+      </div>
+      <div class="dish-card-body">
+        <div class="dish-num">806</div>
+        <div class="dish-name">Maxi maki 2</div>
+        <div class="dish-desc">6p verde salmón, 6p california salmón, 6p maki salmón</div>
+        <div class="dish-price">15,60 €</div>
       </div>
     </div>
 
@@ -1774,6 +1822,7 @@
       <div class="dish-card-body">
         <div class="dish-num">807</div>
         <div class="dish-name">Combinación 1 (17 piezas)</div>
+        <div class="dish-desc">Nigiri salmón, nigiri atún, nigiri langostino, nigiri dorada, nigiri anguila, ikura y california salmón con mango</div>
         <div class="dish-price">26,00 €</div>
       </div>
     </div>
@@ -1785,6 +1834,7 @@
       <div class="dish-card-body">
         <div class="dish-num">808</div>
         <div class="dish-name">Combinación 2 (24 piezas)</div>
+        <div class="dish-desc">Nigiris de pulpo, anguila, atún, salmón, caballa, dorada, langostino y tortilla; gunkan de masago, tobbiko, makis de atún y salmón, california de masago y california de salmón</div>
         <div class="dish-price">31,60 €</div>
       </div>
     </div>
@@ -1796,6 +1846,7 @@
       <div class="dish-card-body">
         <div class="dish-num">809</div>
         <div class="dish-name">Combinación 3 (42 piezas)</div>
+        <div class="dish-desc">Nigiris de atún, langostino, dorada, salmón; gunkan de masago, tobikko; makis de salmón y atún; sashimi de salmón y atún; california de salmón</div>
         <div class="dish-price">45,00 €</div>
       </div>
     </div>
@@ -1807,6 +1858,7 @@
       <div class="dish-card-body">
         <div class="dish-num">810</div>
         <div class="dish-name">Combinación 4 (58 piezas)</div>
+        <div class="dish-desc">Nigiris de langostino, camarón, veira, anguila, tortilla, dorada, pulpo, caballa, salmón y atún; sashimi de salmón y atún; gunkan de masago y tobikko; makis de salmón y atún; california de salmón; futomaki y verde maki salmón</div>
         <div class="dish-price">63,00 €</div>
       </div>
     </div>
@@ -1818,6 +1870,7 @@
       <div class="dish-card-body">
         <div class="dish-num">811</div>
         <div class="dish-name">Combinación 5 (44 piezas)</div>
+        <div class="dish-desc">6p spicy roll salmón, 4p crunch cali roll, 6p maki de atún, 6p maki de aguacate, 6p maki de salmón, 6p maki de cangrejo, 2p nigiri de salmón, 2p nigiri de atún, 2p langostino, 4p dragon roll wakame</div>
         <div class="dish-price">39,90 €</div>
       </div>
     </div>
@@ -1902,11 +1955,10 @@
 <footer>TOTTORI <span>Restaurant japonès · Gavà</span></div>
   <ul class="footer-links">
     <li><a href="https://altorrecillas.github.io/tottori/#about">El Restaurante</a></li>
-    <li><a href="carta.html">Carta</a></li>
     <li><a href="https://altorrecillas.github.io/tottori/#daily">Menú</a></li>
     <li><a href="https://altorrecillas.github.io/tottori/#galeria">Galería</a></li>
     <li><a href="https://altorrecillas.github.io/tottori/#reservas">Reservas</a></li>
-    <li><a href="https://www.tottorigava.com/avisolegal" target="_blank">Aviso Legal</a></li>
+
   </ul>
   <div class="footer-copy">© 2026 Tottori Gavà · Barcelona</div>
 </footer>
